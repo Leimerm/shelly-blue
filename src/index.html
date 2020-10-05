@@ -1,13 +1,54 @@
-<!doctype html>
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ShellyBlue</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- <script src=" https://unpkg.com/@popperjs/core@2"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+<nav class="navbar navbar-expand-lg">
+  <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkhYFL5s0Gv_UWyL8HU3vrVeZj23MDm-tTRQ&usqp=CAU"/>
+  <a class="navbar ml-3 logo-but" href="#">Shelly Blue Book</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/inventory">Inventory <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:4200/service-department">Service Department</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Store Locations
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Cape Girardeau, MO</a>
+            <a class="dropdown-item" href="#">Jackson, MO</a>
+            <a class="dropdown-item" href="#">Carbondale, IL</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <div class="sign-in-label">Sign In</div>
+  <div class="sign-in-box">
+    <a class="sign-in" href="http://localhost:4200/customer-login">Customer</a>
+  </div>
+  <div class="sign-in-box">
+    <a class="sign-in" href="http://localhost:4200/login">Employee</a>
+  </div>
+  </nav>
 <body>
   <app-root></app-root>
 </body>
-</html>
+<footer>
+  <div class="container col-2">
+    <img class="logo-bot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkhYFL5s0Gv_UWyL8HU3vrVeZj23MDm-tTRQ&usqp=CAU"/>
+    <small class="copy">&copy; Copyright 2020, Example Corporation</small>
+  </div>
+</footer>
+

@@ -1,0 +1,86 @@
+.navbar {
+  font-family: Montserrat;
+  background-color: darkblue;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.logo-but {
+  border: solid;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.logo-but:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color:yellow;
+}
+
+.logo {
+  height: 4%;
+  width: 4%;
+  border-radius: 60px;
+  border: solid;
+}
+
+.head-img
+ {
+   height: 80%;
+   width: 100%;
+ }
+
+ .btn {
+   color: white;
+ }
+ .btn-sign {
+  color: white;
+  background-color: darkblue;
+  border: solid white;
+}
+
+.btn-sign:hover {
+  color: yellow;
+  border: solid yellow;
+}
+
+ .btn:hover {
+  color: yellow;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.container {
+  width: 35%;
+  font-family: Montserrat;
+  margin-top: 3%;
+  color: white;
+  background-color: darkslateblue;
+  border: solid darkblue thick
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.h4 {
+  border: solid white;
+  padding: 6;
+  border-radius: 4px;
+  width: 75%;
+  margin-left: 10%;
+  background-color: darkblue;
+}
+

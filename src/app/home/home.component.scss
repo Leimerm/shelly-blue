@@ -1,0 +1,239 @@
+body {
+  font-family: Montserrat;
+  color: white;
+}
+
+.navbar {
+  font-family: Montserrat;
+  background-color: darkblue;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.logo-but {
+  border: solid;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.logo-but:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color:yellow;
+}
+
+.logo {
+  height: 4%;
+  width: 4%;
+  border-radius: 60px;
+  border: solid;
+}
+
+.logo-bot {
+  height: 8%;
+  width: 25%;
+  border-radius: 60px;
+  border: solid darkblue;
+  margin-left: 35%;
+  margin-bottom: .5em;
+}
+
+.head-img{
+   height: 80%;
+   width: 100%;
+ }
+
+ .btn {
+   color: white;
+   background-color: darkblue;
+ }
+
+ .other-btn {
+  border: solid white;
+ }
+
+ .other-btn:hover {
+  border: solid yellow;
+ }
+
+ .btn:hover {
+  color: yellow;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.dropdown-menu {
+  background-color: darkblue;
+}
+
+.dropdown-menu:hover {
+  background-color: darkblue;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: yellow;
+  background-color: darkblue;
+}
+
+.dropdown-menu:hover {
+  color:yellow;
+}
+
+.sign-in-box {
+  width: 8%;
+  border-left: solid white;
+  border-width: thin;
+}
+
+.sign-in {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  color: white;
+  margin: .5em;
+}
+
+.sign-in:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+.sign-in-label{
+  margin: .5em;
+}
+
+.copy {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jumbotron {
+  background-color:darkslateblue;
+  border: solid darkblue;
+}
+
+.details {
+  width: 70%;
+}
+
+.card-car {
+  background-color: darkslateblue;
+  border: solid darkblue;
+  border-radius: 4px;
+}
+
+.display-4 {
+  color: white;
+  border: solid white;
+  background-color: darkblue;
+  margin-bottom: .25em;
+  padding: 6;
+  width: 50%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 36pt;
+}
+
+.care-head {
+  color: white;
+  border: solid darkblue;
+  background-color: darkblue;
+  width: 35%;
+  margin-left: 32%;
+  font-size: 36pt;
+  border-radius: 4px;
+}
+
+.img-fluid {
+  border: solid white;
+  border-radius: 4px;
+}
+
+.card-extra {
+  float: left;
+  margin: 2em;
+  margin-left: 7%;
+  background-color: darkslateblue;
+  border: solid darkblue;
+  border-radius: 4px;
+  border-width: thick;
+  height: 75%;
+}
+
+.card-extra-img-top {
+  height: 40%;
+  width: 100%;
+  padding: 11;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18pt;
+  border: solid white;
+  border-radius: 4px;
+  background-color: darkblue;
+  width: 95%;
+  padding: 4;
+  text-align: center;
+}
+
+.btn-card {
+  margin-left: 23%;
+}
+
+h6 {
+  background-color: darkblue;
+  width: 40%;
+  font-size: 36pt;
+  text-align: center;
+  margin-left: 30%;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+transform: translateX(0);
+}

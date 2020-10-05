@@ -1,1 +1,127 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Montserrat;
+  color: white;
+}
+
+.navbar {
+  font-family: Montserrat;
+  background-color: darkblue;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.logo-but {
+  border: solid;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.logo-but:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color:yellow;
+}
+
+.logo {
+  height: 4%;
+  width: 4%;
+  border-radius: 60px;
+  border: solid;
+}
+
+.logo-bot {
+  height: 8%;
+  width: 25%;
+  border-radius: 60px;
+  border: solid darkblue;
+  margin-left: 35%;
+  margin-bottom: .5em;
+}
+
+.head-img{
+   height: 80%;
+   width: 100%;
+ }
+
+ .btn {
+   color: white;
+   background-color: darkblue;
+ }
+
+ .other-btn {
+  border: solid white;
+ }
+
+ .other-btn:hover {
+  border: solid yellow;
+ }
+
+ .btn:hover {
+  color: yellow;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.dropdown-menu {
+  background-color: darkblue;
+}
+
+.dropdown-menu:hover {
+  background-color: darkblue;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: yellow;
+  background-color: darkblue;
+}
+
+.dropdown-menu:hover {
+  color:yellow;
+}
+
+.sign-in-box {
+  width: 8%;
+  border-left: solid white;
+  border-width: thin;
+}
+
+.sign-in {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  color: white;
+  margin: .5em;
+}
+
+.sign-in:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+.sign-in-label{
+  margin: .5em;
+}
+
+.copy {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  color: darkblue;
+}
+
+
