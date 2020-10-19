@@ -1,0 +1,38 @@
+<div class="jumbotron">
+  <h1 class="display-4">Instant Trade Estimate</h1>
+  <div class="input-hold mt-4 mb-2">
+    <div class="input-group ml-3 mb-3">
+        <input type="text" [(ngModel)]="year" class="form-control" id="year" placeholder="Enter Year" aria-label="Username" aria-describedby="basic-addon1" required />
+      </div>
+      <div class="input-group ml-3 mb-3">
+        <input type="text" [(ngModel)]="make" class="form-control" id="make" placeholder="Enter Make" aria-label="Username" aria-describedby="basic-addon1" required />
+      </div>
+      <div class="input-group ml-3 mb-3">
+        <input type="text" [(ngModel)]="model" class="form-control" id="model" placeholder="Enter Model" aria-label="Username" aria-describedby="basic-addon1" required />
+      </div>
+      <div class="input-group ml-3 mb-3">
+        <input type="text" [(ngModel)]="milage" class="form-control" id="milage" placeholder="Enter Milage" aria-label="Username" aria-describedby="basic-addon1" required />
+      </div>
+  </div>
+  <div class="lead">
+    <a class="btn other-btn" role="button" data-toggle="modal" data-target="#etsModal" (click)="onClickMe()">Get Estimate</a>
+  </div>
+</div>
+
+<div class="modal fade" id="etsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="pop mb-0">Your Instant Estimate Is</h3>
+      </div>
+      <div class="modal-body">
+        <h3 class="pop pop2" id="etsPop"></h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn other-btn mod" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from 'C:/Users/matth/Projects/shelly-blue/src/app/http.service'
+import { Car } from 'src/app/shared/models/cars';
+import { CarService } from './../shared/services/car.service';
+import { LocalStorageService } from 'src/app/shared/services/local-storage.service'
+
 
 @Component({
   selector: 'app-inventory',
@@ -7,17 +10,25 @@ import { HttpService } from 'C:/Users/matth/Projects/shelly-blue/src/app/http.se
   styleUrls: ['./inventory.component.scss']
 })
 export class InventoryComponent implements OnInit {
+  cars: Car[] = []
+  constructor(
+    private carService: CarService,
+    private storageService: LocalStorageService
+  ) { }
 
-  cars: Object;
-
-  constructor(private _http: HttpService) { }
-
-  ngOnInit() {
-    this._http.getCars().subscribe(data => {
-      this.cars = data
-      console.log(this.cars);
-    }
-  );
+  ngOnInit(): void {
+    this.retrieveAllCars()
   }
 
+  retrieveAllCars() {
+    this.carService.getAllCars().subscribe(cars => {
+      if (cars) {
+        this.cars = cars
+      }
+    }, error => {
+      if (error) {
+        console.log(error)
+      }
+    })
+  }
 }

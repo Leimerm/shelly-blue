@@ -1,0 +1,70 @@
+<head>
+
+</head>
+
+<body>
+  <div class="single-hold">
+    <div class="title-hold">
+      <h1 class="title" *ngIf="car">{{car.year}} {{car.make}} {{car.model}}</h1>
+      <div class="btn-hold">
+        <button type="button" class="btn-title btn other-btn" data-toggle="modal" data-target="#exampleModal">Need More Information?</button>
+      </div>
+    </div>
+    <div class="box mt-3">
+      <div class="info-hold">
+        <div class="car-facts important">Price: <span class="space">${{car.price}}</span></div>
+        <div class="car-facts">As Low As<span id="pay"></span>/month</div>
+        <div class="car-facts">Transmission: <span class="space">Automatic</span></div>
+        <div class="car-facts">Drive Line: <span class="space">{{car.drive_line}}</span></div>
+        <div class="car-facts">Exterior Color: <span class="space">{{car.color}}</span></div>
+        <div class="car-facts last">Interior Color: <span class="space">{{car.ex_color}}</span></div>
+      </div>
+      <div class="pic-hold">
+        <img [src]="carImg" (error)="setDefaultPic()">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="pop mb-3">Please Enter Your Contact Information</h3>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        <div class="input-hold mt-2">
+          <input class="form-control mb-3 mt-3 field" placeholder="First Name" required>
+          <input class="form-control mb-3 mt-3 field" placeholder="Last Name" required>
+          <input class="form-control mb-2 mt-3 field" placeholder="Phone Number" required>
+          <input class="form-control mb-2 mt-3 field" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn other-btn mod" data-toggle="modal" data-target="#thanksModal" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn other-btn mod" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <h3 class="pop pop2 mb-3">Thank you! We will get back to you as soon as possible!</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn other-btn mod" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+

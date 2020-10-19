@@ -1,1 +1,103 @@
-<p>service-department works!</p>
+<body>
+<div class="container service-form">
+  <h1 class="mt-4 mb-3">Service Department Form</h1>
+  <h2>Contact Information</h2>
+  <div class="name-hold">
+    <input class="form-control mb-1 field" placeholder="First Name">
+    <input class="form-control mb-1 field ml-3" placeholder="Last Name">
+    <input class="form-control mb-1 field ml-3" placeholder="Phone Number">
+  </div>
+  <div class="address-hold">
+    <input class="form-control mb-3 mt-3 field" placeholder="Address">
+    <input class="form-control mb-3 mt-3 field ml-3" placeholder="City">
+    <input class="form-control state mb-2 mt-3 field ml-3" placeholder="State">
+    <input class="form-control zip mb-2 mt-3 field ml-3" placeholder="Zip Code">
+  </div>
+
+  <h2 class="mt-3">Service Options</h2>
+  <div class="col">
+    <div class="service-hold">
+      <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Adjust Brakes</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Air Conditioner Repair</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Balance Tires</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Coolant Flush</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Engine Tune-Up</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Front-End Adjustment</label>
+        </div>
+    </div>
+    <div class="service-hold2">
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Oil Change</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Replace Muffler</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">State Inspection</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Tire Rotation</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Transmission Flush</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="mr-1" value="">Other Services</label>
+        </div>
+    </div>
+  </div>
+
+  <h2 class="mt-3">Service Information</h2>
+  <div class="address-hold">
+    <input class="form-control mb-3 mt-1 field" placeholder="Year">
+    <input class="form-control mb-3 mt-1 field ml-3" placeholder="Make">
+    <input class="form-control mb-2 mt-1 field ml-3" placeholder="Model">
+    <input class="form-control mb-2 mt-1 field ml-3" placeholder="Milage">
+  </div>
+  <h2 class="mt-3">Appointment Scheduling</h2>
+  <div class="address-hold">
+    <input class="form-control mb-3 mt-1 field" placeholder="mm/dd/yyyy">
+    <div class="input-group mb-3 mt-1 ml-3 field">
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Please Select a Time</option>
+        <option value="1">Anytime</option>
+        <option value="2">Morning</option>
+        <option value="3">Mid-Day</option>
+        <option value="3">Afternoon</option>
+        <option value="3">Evening</option>
+      </select>
+    </div>
+  </div>
+  <h2 class="mt-3">Comments</h2>
+  <div class="address-hold">
+    <input type="name" class="form-control mb-3 mt-1 field comment" placeholder="">
+  </div>
+  <button type="button" class="btn other-btn mb-3 mt-3" data-toggle="modal" data-target="#subModal">Submit</button>
+</div>
+</body>
+
+<div class="modal fade" id="subModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <h3 class="pop pop2 mb-3">Your Service Form has been submitted. We will get back to you as soon as possible!</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn other-btn mod" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

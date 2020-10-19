@@ -1,10 +1,12 @@
 <body>
-<h1>Inventory</h1>
-
-<ul *ngIf="cars">
-  <li *ngFor="let car of cars">
-    <p class="name">{{ car.name }}</p>
-    <p class="image">{{ car.image }}</p>
-  </li>
-</ul>
+<div class="inv-hold">
+  <h1>Inventory</h1>
+  <div class="container mb-3 card-box ">
+    <div class="box">
+      <div *ngFor="let car of cars">
+          <app-car-card [car]="car"></app-car-card>
+      </div>
+    </div>
+  </div>
+</div>
 </body>

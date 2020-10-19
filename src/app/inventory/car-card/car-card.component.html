@@ -1,0 +1,7 @@
+<div class="card" style="width: 19em;">
+  <img class="car-img-top" [src]="carImg" (error)="setDefaultPic()">
+  <div class="card-body">
+    <h5 class="car-brand">{{car.year}} <span>{{car.make}} </span><Span>{{car.model}}</Span></h5>
+    <a *ngIf="car" class="btn other-btn" (click)="routeToViewCar(car.id)">Learn More</a>
+  </div>
+</div>

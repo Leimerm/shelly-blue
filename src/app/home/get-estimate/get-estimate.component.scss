@@ -1,0 +1,58 @@
+.jumbotron {
+  background-color:darkslateblue;
+  border: solid darkblue;
+  // background: linear-gradient(darkblue, darkslateblue, white);
+}
+
+.input-hold {
+  display: flex;
+}
+
+.input-group {
+  width: 40%;
+}
+
+.display-4 {
+  color: white;
+  border: solid white;
+  background-color: darkblue;
+  margin-bottom: .25em;
+  width: 50%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+.other-btn {
+  border: solid white;
+  color: white;
+  background-color: darkblue;
+  font-family: Montserrat;
+ }
+
+.other-btn:hover {
+  border-color: yellow;
+  color: yellow;
+}
+
+.pop {
+  background-color: darkblue;
+  font-size: 24pt;
+  text-align: center;
+  border: solid white;
+  width: 95%;
+  margin-left: 4%;
+  padding: 10;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.pop2 {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.modal-body {
+  background-color: darkslateblue;
+}

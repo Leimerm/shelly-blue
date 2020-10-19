@@ -22,3 +22,4 @@ $('.carousel .carousel-item').each(function(){
       }
 });
 });
+

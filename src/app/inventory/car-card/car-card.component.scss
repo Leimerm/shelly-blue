@@ -1,0 +1,51 @@
+.card {
+  border: solid white thick;
+  background-color: darkslateblue;
+  color: white;
+  display: inline-block;
+  margin-left: 30%;
+  border-radius: 10px;
+}
+h5 {
+  border: solid white;
+  text-align: center;
+  background-color: darkblue;
+  width: 92%;
+  margin-left: 5%;
+  color: white;
+  font-size: 16pt;
+  border-radius: 4px;
+  grid-template-columns: fit-content(70%) fit-content(90%) 1fr;
+}
+h6 {
+  border: solid white;
+  text-align: center;
+  background-color: darkblue;
+  width: 45%;
+  margin-left: 27%;
+  color: white;
+  font-size: 14pt;
+  border-radius: 4px;
+}
+.car-img-top {
+  width: 70%;
+  margin-left: 15%;
+  Margin-top: 5%;
+  border: solid white;
+  background-color: darkblue;
+  border-radius: 4px;
+}
+
+.btn {
+  margin-left: 25%;
+  border: solid white;
+  color: white;
+}
+
+.btn:hover {
+  border: solid yellow;
+  color: yellow;
+ }
+
+
+

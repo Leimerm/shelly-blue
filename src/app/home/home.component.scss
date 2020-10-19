@@ -1,137 +1,28 @@
-body {
-  font-family: Montserrat;
-  color: white;
-}
-
-.navbar {
-  font-family: Montserrat;
-  background-color: darkblue;
-  color: white;
-}
-
-.nav-link {
-  color: white;
-}
-
-.logo-but {
-  border: solid;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.logo-but:hover {
-  color:yellow;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color:yellow;
-}
-
-.logo {
-  height: 4%;
-  width: 4%;
-  border-radius: 60px;
-  border: solid;
-}
-
-.logo-bot {
-  height: 8%;
-  width: 25%;
-  border-radius: 60px;
-  border: solid darkblue;
-  margin-left: 35%;
-  margin-bottom: .5em;
-}
-
-.head-img{
-   height: 80%;
-   width: 100%;
- }
-
- .btn {
-   color: white;
-   background-color: darkblue;
- }
-
- .other-btn {
-  border: solid white;
- }
-
- .other-btn:hover {
-  border: solid yellow;
- }
-
- .btn:hover {
-  color: yellow;
-}
-
-.btn:active {
-  outline: none;
-}
-
-.dropdown-menu {
-  background-color: darkblue;
-}
-
-.dropdown-menu:hover {
-  background-color: darkblue;
-}
-
-.dropdown-item {
-  color: white;
-}
-
-.dropdown-item:hover {
-  color: yellow;
-  background-color: darkblue;
-}
-
-.dropdown-menu:hover {
-  color:yellow;
-}
-
-.sign-in-box {
-  width: 8%;
-  border-left: solid white;
-  border-width: thin;
-}
-
-.sign-in {
+.input-hold {
   display: flex;
-  flex-wrap: wrap;
-  float: right;
-  color: white;
-  margin: .5em;
 }
 
-.sign-in:hover {
-  color:yellow;
-  text-decoration: none;
-}
-
-.sign-in-label{
-  margin: .5em;
-}
-
-.copy {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.jumbotron {
-  background-color:darkslateblue;
-  border: solid darkblue;
+.input-group {
+  width: 40%;
 }
 
 .details {
   width: 70%;
 }
 
+.show {
+  border: solid white;
+  color: white;
+  padding: 5;
+  margin-left: 10%;
+  background-color: darkblue;
+  border-radius: 4px;
+  font-size: 20pt;
+}
+
 .card-car {
   background-color: darkslateblue;
-  border: solid darkblue;
+  border: solid darkblue thick;
   border-radius: 4px;
 }
 
@@ -145,6 +36,7 @@ body {
   text-align: center;
   border-radius: 4px;
   font-size: 36pt;
+  font-weight: bold;
 }
 
 .care-head {
@@ -155,11 +47,13 @@ body {
   margin-left: 32%;
   font-size: 36pt;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 .img-fluid {
   border: solid white;
   border-radius: 4px;
+  background-color: darkblue;
 }
 
 .card-extra {
@@ -171,6 +65,7 @@ body {
   border-radius: 4px;
   border-width: thick;
   height: 75%;
+  // margin-bottom: 1%;
 }
 
 .card-extra-img-top {
@@ -185,10 +80,22 @@ body {
   border: solid white;
   border-radius: 4px;
   background-color: darkblue;
-  width: 95%;
+  width: 99%;
   padding: 4;
   text-align: center;
 }
+
+.other-btn {
+  border: solid white;
+  color: white;
+  background-color: darkblue;
+  font-family: Montserrat;
+ }
+
+ .other-btn:hover {
+   border-color: yellow;
+   color: yellow;
+ }
 
 .btn-card {
   margin-left: 23%;
