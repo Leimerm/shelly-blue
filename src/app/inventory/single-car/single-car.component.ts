@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Car } from 'src/app/shared/models/cars';
 import { CarService } from 'src/app/shared/services/car.service';
-import { Employee } from 'C:/Users/matth/Projects/shelly-blue/src/app/shared/models/employee'
+import { Employee } from 'src/app/shared/models/employee'
 import { EmployeeService } from 'src/app/shared/services/employee.service'
 
 @Component({
